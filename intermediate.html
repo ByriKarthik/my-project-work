@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FitTracker - Intermediate Workouts</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="contact.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section id="intermediate-workouts">
+            <h2>Intermediate Workouts</h2>
+
+            <div class="workout-category" onclick="showWorkouts('abs')">
+                <h3>Abs</h3>
+                <div id="abs" class="hidden">
+                    <table border="1" style="text-align: center;">
+                        <caption>Abs Workouts</caption>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Workouts</th>
+                                <th>Focus area</th>
+                                <th>Time/No. of Reps</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Mountain Climber</td>
+                                <td>Abs</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Crunches</td>
+                                <td>Abs</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Plank</td>
+                                <td>Abs</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Abdominal Crunches</td>
+                                <td>Abs</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Russian Twist</td>
+                                <td>Abs</td>
+                                <td>25 times</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="workout-category" onclick="showWorkouts('chest')">
+                <h3>Chest</h3>
+                <div id="chest" class="hidden">
+                    <table border="1" style="text-align: center;">
+                        <caption>Chest Workouts</caption>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Workouts</th>
+                                <th>Focus area</th>
+                                <th>Time/No. of Reps</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Push-ups</td>
+                                <td>Chest</td>
+                                <td>10 times</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Chest Stretch</td>
+                                <td>Chest</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Incline Push-ups</td>
+                                <td>Chest</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Triceps Dips</td>
+                                <td>Chest</td>
+                                <td>10 times</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Wide Arm Push-ups</td>
+                                <td>Chest</td>
+                                <td>25 times</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+            <div class="workout-category" onclick="showWorkouts('arms')">
+                <h3>Arms</h3>
+                <div id="arms" class="hidden">
+                    <table border="1" style="text-align: center;">
+                        <caption>Arms Workouts</caption>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Workouts</th>
+                                <th>Focus area</th>
+                                <th>Time/No. of Reps</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Punches</td>
+                                <td>Arms</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Wall Puch-ups</td>
+                                <td>Arms</td>
+                                <td>20 times</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Inchworms</td>
+                                <td>Arms</td>
+                                <td>20 times</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Triceps Stretchs</td>
+                                <td>Arms</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Diamond Push-ups</td>
+                                <td>Arms</td>
+                                <td>15 times</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="workout-category" onclick="showWorkouts('legs')">
+                <h3>Legs</h3>
+                <div id="legs" class="hidden">
+                    <table border="1" style="text-align: center;">
+                        <caption>Legs Workouts</caption>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Workouts</th>
+                                <th>Focus area</th>
+                                <th>Time/No. of Reps</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Side Hop</td>
+                                <td>Legs</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Lunges</td>
+                                <td>Legs</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Donkey Kicks</td>
+                                <td>Legs</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Side-Lying Leg Lift</td>
+                                <td>Legs</td>
+                                <td>20 times</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Squats</td>
+                                <td>Legs</td>
+                                <td>20 times</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div class="workout-category" onclick="showWorkouts('shoulder-back')">
+                <h3>Shoulder and Back</h3>
+                <div id="shoulder-back" class="hidden">
+                    <table border="1" style="text-align: center;">
+                        <caption>Shoulder and Back Workouts</caption>
+                        <thead>
+                            <tr>
+                                <th>Sno.</th>
+                                <th>Workouts</th>
+                                <th>Focus area</th>
+                                <th>Time/No. of Reps</th> 
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>1</td>
+                                <td>Arm Raises</td>
+                                <td>Shoulder and Back</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                            <tr>
+                                <td>2</td>
+                                <td>Side Arm Raise</td>
+                                <td>Shoulder and Back</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>3</td>
+                                <td>Rhomboid Pulls</td>
+                                <td>Shoulder and Back</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>4</td>
+                                <td>Knee Push-ups</td>
+                                <td>Shoulder and Back</td>
+                                <td>25 times</td>
+                            </tr>
+                            <tr>
+                                <td>5</td>
+                                <td>Arm Scissors</td>
+                                <td>Shoulder and Back</td>
+                                <td>01:00 minutes</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fitness Tracker</p>
+    </footer>
+
+    <script>
+        function showWorkouts(category) {
+            var categoryElement = document.getElementById(category);
+    
+            // Toggle visibility
+            if (categoryElement.classList.contains("hidden")) {
+                categoryElement.classList.remove("hidden");
+            } else {
+                categoryElement.classList.add("hidden");
+            }
+        }
+    </script>
+
+</body>
+</html>

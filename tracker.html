@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Your Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="tracker">
+
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="contact.html">About Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="subscription-box">
+            <h2>Subscribe to Track Your Fitness</h2>
+            <p>Get updates and personalized workout recommendations delivered to your inbox!</p>
+
+            <form id="subscription-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="qr-code-container">
+                <figure> <img src="qr.jpeg" alt="QR Code"></figure>
+                <figcaption>pay $20</figcaption>
+            </div>
+        </section>
+
+        
+
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fitness Tracker</p>
+    </footer>
+    <script>
+        document.getElementById("subscription-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thanks for subscribing!");
+            document.getElementById("email").value = "";
+        });
+    </script>
+
+</body>
+</html>

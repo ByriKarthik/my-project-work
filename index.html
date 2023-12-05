@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fitness Tracker - Your Fitness Companion</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body id="home">
+    <header>
+        <h1>Fitness Tracker</h1>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="workouts.html">Workouts</a></li>
+                <li><a href="tracker.html">Tracker</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home">
+            <h2>Welcome to Fitness Tracker!</h2>
+            <p>Embark on your fitness journey with Fitness Tracker, your personal fitness companion. Whether you're a seasoned athlete or just starting, we have everything you need to plan and track your workouts effectively.</p>
+            <h3>Key Features:</h3>
+            <h4>Customized Workout Plans: Tailor your workouts to achieve your fitness goals.We divided our workouts for people from three different categories</h4>
+                <ul>
+                    <li>Category one: Beginner</li>
+                    <li>Categoy two: Intermediate</li>
+                    <li>Category three: Advanced</li>
+                </ul>
+            <h4>Fitness Tracker: Track your exercises, set goals, and track your progress over time from which ever category you may belong</h4>
+            <p>Get started today and take control of your fitness journey. Your goals, your way!</p>
+        </section>
+        <section id="workouts">
+            <h2>Choose Your Workout Level</h2>
+                <div class="workout-level" id="beginner">
+                    <h3 style="color: white;">Beginner Workouts</h3>
+                    <p style="color: white;" id="beginner-description">Get started with simple exercises tailored for beginners.</p>
+                    <a href="beginner.html"><button>Select Beginner Workouts</button></a>
+                </div>
+                <div class="workout-level" id="intermediate">
+                    <h1>Intermediate Workouts</h1>
+                    <p style="color: white;" id="intermediate-description">Challenge yourself with more intense exercises for intermediate fitness levels.</p>
+                    <a href="intermediate.html"><button>Select Intermediate Workouts</button></a>
+                </div>
+                <div class="workout-level" id="advanced">
+                    <h3 style="color: white;">Advanced Workouts</h3>
+                    <p style="color: white;" id="advanced-description">Take your fitness to the next level with advanced workout routines.</p>
+                    <a href="advanced.html"><button>Select Advanced Workouts</button></a>
+                </div>
+        </section>
+        <section class="subscription-box">
+            <h2>Subscribe to Track Your Fitness</h2>
+            <p>Get updates and personalized workout recommendations delivered to your inbox!</p>
+
+            <form id="subscription-form">
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required>
+                <button type="submit">Subscribe</button>
+            </form>
+            <div id="qr-code-container">
+                <figure> <img src="qr.jpeg" alt="QR Code"></figure>
+                <figcaption>pay $20</figcaption>
+            </div>
+        </section>
+        <section id="Contact Us">
+            <h2>Contact Us</h2>
+            <h3>Lovely Professional University, Punjab, India</h3>
+            <h3>Email at:- fitnesstracker@gmail.com</h3>
+            <h3>Call us on</h3>
+            <ul>
+                <li>+91 9063****98 :- Karthik Byri</li>
+                <li>+91 9100****16 :- Revan Kumar</li>
+                <li>+91 9177****02 :- Sriyesh Avula</li>
+            </ul>
+            <h3>Quick links</h3>
+            <div class="quicklinks"></div>
+            <ul>
+                <li><a href="index.html" style="color: aliceblue;">Home</a></li>
+                <li><a href="workouts.html" style="color: aliceblue;">Workouts</a></li>
+                <li><a href="tracker.html" style="color: aliceblue;">Tracker</a></li>
+                <li><a href="contact.html" style="color: aliceblue;">Contact Us</a></li>
+            </ul>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2023 Fitness Tracker</p>
+    </footer>
+    <script>
+        document.getElementById("subscription-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thanks for subscribing!");
+            document.getElementById("email").value = "";
+        });
+    </script>
+
+</body>
+</html>
